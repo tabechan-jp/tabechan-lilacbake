@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LILAC BAKE（ライラック ベイク）｜札幌・山鼻（東屯田通）のパン屋 名物・山鼻コロネと27層パンオショコラ</title>
+<meta name="description" content="札幌市中央区・山鼻のパン屋「LILAC BAKE（ライラック ベイク）」。市電・東屯田通停すぐ。道産小麦ブレンドのパン50〜60種類、名物の山鼻コロネ、27層の三角パンオショコラ。パン職人歴17年の店主が一人で焼き上げます。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --lilac:#7b5ea7; --lilac-deep:#54397d; --lilac-soft:#efe9f7; --cream:#fdfaf4;
+  --ink:#33291f; --brown:#8a6a45; --line:#e7dcc8; --accent:#c96f2e;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:"Zen Maru Gothic",sans-serif;color:var(--ink);background:var(--cream);font-size:16px;line-height:1.8;padding-bottom:76px}
+h1,h2,h3{font-family:"Shippori Mincho",serif;line-height:1.5}
+img{max-width:100%;display:block}
+a{color:inherit}
+.sample-band{position:fixed;top:0;left:0;right:0;z-index:60;background:var(--lilac-deep);color:#fff;text-align:center;font-size:12px;padding:5px 8px;letter-spacing:.05em}
+.watermark{position:fixed;inset:0;z-index:50;pointer-events:none;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.watermark span{font-family:"Shippori Mincho",serif;font-size:22vw;color:rgba(123,94,167,.06);transform:rotate(-24deg);white-space:nowrap;font-weight:700}
+header{position:sticky;top:27px;z-index:40;background:rgba(253,250,244,.94);backdrop-filter:blur(6px);border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:10px 16px}
+.logo{font-family:"Shippori Mincho",serif;font-weight:700;font-size:20px;color:var(--lilac-deep);letter-spacing:.08em}
+.logo small{display:block;font-family:"Zen Maru Gothic",sans-serif;font-size:11px;color:var(--brown);letter-spacing:.2em}
+.head-tel{background:var(--lilac);color:#fff;text-decoration:none;border-radius:999px;padding:8px 16px;font-weight:700;font-size:14px}
+.hero{position:relative;min-height:78vh;display:flex;align-items:flex-end;color:#fff}
+.hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(40,25,60,.08) 40%,rgba(40,25,60,.72))}
+.hero-in{position:relative;z-index:2;padding:28px 20px 26px;width:100%}
+.hero .area{font-size:13px;letter-spacing:.25em;background:rgba(255,255,255,.18);display:inline-block;padding:3px 12px;border-radius:999px;margin-bottom:12px}
+.hero h1{font-size:34px;font-weight:700;text-shadow:0 2px 10px rgba(0,0,0,.35)}
+.hero h1 .en{display:block;font-size:15px;letter-spacing:.35em;font-family:"Zen Maru Gothic",sans-serif;font-weight:500;margin-bottom:6px}
+.hero p.catch{margin-top:10px;font-size:16px;text-shadow:0 1px 6px rgba(0,0,0,.4)}
+.badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.badges span{background:rgba(255,255,255,.92);color:var(--lilac-deep);font-size:12.5px;font-weight:700;border-radius:999px;padding:5px 12px}
+.status-line{background:#fff;border-bottom:1px solid var(--line);padding:12px 20px;display:flex;align-items:center;gap:10px;font-weight:700}
+.status-dot{width:11px;height:11px;border-radius:50%;background:#bbb;flex:none}
+.status-dot.open{background:#3d9e50;box-shadow:0 0 0 4px rgba(61,158,80,.18)}
+.status-line small{font-weight:400;color:#77695a}
+section{padding:44px 20px;max-width:860px;margin:0 auto}
+.sec-head{text-align:center;margin-bottom:26px}
+.sec-head .en{color:var(--lilac);letter-spacing:.35em;font-size:12px;font-weight:700}
+.sec-head h2{font-size:26px;color:var(--lilac-deep);margin-top:4px}
+.numbers{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.num-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px 10px;text-align:center;box-shadow:0 3px 10px rgba(84,57,125,.05)}
+.num-card .big{font-family:"Shippori Mincho",serif;font-size:30px;font-weight:700;color:var(--lilac-deep)}
+.num-card .big small{font-size:16px}
+.num-card .lbl{font-size:12.5px;color:#77695a;margin-top:2px}
+.reasons{display:grid;gap:16px}
+.reason{background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px}
+.reason h3{color:var(--lilac-deep);font-size:19px;margin-bottom:6px}
+.reason h3 .no{color:var(--accent);font-family:"Zen Maru Gothic",sans-serif;font-size:13px;letter-spacing:.2em;display:block}
+.reason img{border-radius:12px;margin-bottom:12px;aspect-ratio:16/9;object-fit:cover;width:100%}
+.menu-grid{display:grid;gap:18px}
+@media(min-width:640px){.menu-grid{grid-template-columns:1fr 1fr}.numbers{grid-template-columns:repeat(4,1fr)}}
+.menu-card{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:0 3px 10px rgba(84,57,125,.05)}
+.menu-card img{aspect-ratio:16/10;object-fit:cover;width:100%}
+.menu-card .body{padding:16px 18px 18px}
+.menu-card h3{font-size:19px;color:var(--lilac-deep)}
+.price{font-family:"Shippori Mincho",serif;font-weight:700;color:var(--accent);font-size:19px}
+.tag{display:inline-block;background:var(--accent);color:#fff;font-size:11.5px;font-weight:700;border-radius:999px;padding:2px 10px;margin-bottom:6px}
+.tag.media{background:var(--lilac)}
+.feature{background:linear-gradient(135deg,var(--lilac-deep),var(--lilac));color:#fff;border-radius:18px;overflow:hidden}
+.feature img{aspect-ratio:16/9;object-fit:cover;width:100%}
+.feature .body{padding:20px 22px 24px}
+.feature h3{font-size:22px;margin-bottom:6px}
+table.menu{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden}
+table.menu td{padding:13px 16px;border-bottom:1px solid var(--line);font-size:15.5px}
+table.menu tr:last-child td{border-bottom:none}
+table.menu td.p{text-align:right;font-weight:700;color:var(--accent);white-space:nowrap;font-family:"Shippori Mincho",serif}
+.note{font-size:12.5px;color:#77695a;margin-top:10px}
+.owner{background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px}
+.owner h3{color:var(--lilac-deep);font-size:20px;margin-bottom:6px}
+.news{background:#fff;border:1px solid var(--line);border-radius:16px;padding:8px 20px}
+.news li{list-style:none;padding:13px 0;border-bottom:1px dashed var(--line)}
+.news li:last-child{border-bottom:none}
+.news .date{color:var(--lilac);font-weight:700;font-size:13px;letter-spacing:.08em}
+.ig-banner{background:var(--lilac-soft);border:1px solid #ddd0ef;border-radius:16px;padding:24px 20px;text-align:center}
+.ig-banner h3{color:var(--lilac-deep);font-size:20px;margin-bottom:6px}
+.btn{display:inline-block;background:var(--lilac);color:#fff;text-decoration:none;font-weight:700;border-radius:999px;padding:12px 28px;margin-top:12px}
+.info{background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px}
+.info dl{display:grid;grid-template-columns:86px 1fr;row-gap:12px;font-size:15px}
+.info dt{font-weight:700;color:var(--lilac-deep)}
+.info dd a{color:var(--lilac-deep);font-weight:700}
+.map{margin-top:18px;border-radius:12px;overflow:hidden;border:1px solid var(--line)}
+.map iframe{width:100%;height:280px;border:0;display:block}
+footer{background:var(--lilac-deep);color:#f2ecfa;padding:34px 20px 40px;text-align:center;font-size:13.5px}
+footer .fname{font-family:"Shippori Mincho",serif;font-size:19px;margin-bottom:8px}
+footer a{color:#fff}
+.action-bar{position:fixed;left:0;right:0;bottom:0;z-index:55;display:grid;grid-template-columns:1fr 1fr 1fr;background:#fff;border-top:1px solid var(--line);box-shadow:0 -3px 14px rgba(84,57,125,.12)}
+.action-bar a{text-align:center;text-decoration:none;font-weight:700;font-size:14px;padding:13px 4px;color:var(--lilac-deep)}
+.action-bar a.tel{background:var(--lilac);color:#fff}
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
+.reveal.on{opacity:1;transform:none}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Bakery","name":"LILAC BAKE（ライラック ベイク）","telephone":"011-206-0983","address":{"@type":"PostalAddress","postalCode":"064-0922","addressRegion":"北海道","addressLocality":"札幌市中央区","streetAddress":"南22条西9丁目1-31"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Wednesday","Thursday","Friday"],"opens":"08:00","closes":"18:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Saturday","Sunday"],"opens":"09:00","closes":"18:00"}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.4","reviewCount":"111"}}
+</script>
+</head>
+<body>
+<div class="sample-band">これはサンプルです。無断使用は禁止しています</div>
+<div class="watermark"><span>SAMPLE</span></div>
+
+<header>
+  <div class="logo">LILAC BAKE<small>ライラック ベイク｜札幌・山鼻</small></div>
+  <a class="head-tel" href="tel:0112060983">☎ 011-206-0983</a>
+</header>
+
+<div class="hero">
+  <img class="bg" src="hero.webp" alt="LILAC BAKEの店内に並ぶパン（イメージ）">
+  <div class="hero-in">
+    <span class="area">札幌・山鼻 ｜ 市電「東屯田通」停すぐ</span>
+    <h1><span class="en">LILAC BAKE</span>ライラック ベイク</h1>
+    <p class="catch">パン職人歴17年の店主が一人で焼く、<br>27層のパンオショコラと名物・山鼻コロネ。</p>
+    <div class="badges">
+      <span>Google ★4.4・口コミ111件</span>
+      <span>HBC「今日ドキッ！」で紹介</span>
+      <span>2021年10月オープン</span>
+    </div>
+  </div>
+</div>
+
+<div class="status-line">
+  <span class="status-dot" id="statusDot"></span>
+  <span id="statusText">本日の営業情報を確認しています</span>
+</div>
+
+<section>
+  <div class="sec-head reveal"><div class="en">ABOUT</div><h2>数字で見る、ライラック ベイク</h2></div>
+  <div class="numbers">
+    <div class="num-card reveal"><div class="big">★4.4</div><div class="lbl">Google評価</div></div>
+    <div class="num-card reveal"><div class="big">111<small>件</small></div><div class="lbl">Google口コミ</div></div>
+    <div class="num-card reveal"><div class="big">50〜60<small>種</small></div><div class="lbl">並ぶパンの種類</div></div>
+    <div class="num-card reveal"><div class="big">17<small>年</small></div><div class="lbl">店主のパン職人歴</div></div>
+  </div>
+  <p style="margin-top:20px" class="reveal">札幌市中央区・山鼻、市電「東屯田通」停留所のすぐそばにある小さなパン屋です。道産小麦をブレンドした生地で、甘い系から惣菜系、ハード系まで幅広く焼き上げています。売り切れ次第終了のため、人気のパンは午前中でなくなることもあります。</p>
+</section>
+
+<section style="padding-top:0">
+  <div class="sec-head reveal"><div class="en">REASON</div><h2>選ばれる理由</h2></div>
+  <div class="reasons">
+    <div class="reason reveal">
+      <h3><span class="no">REASON 01</span>道産小麦ブレンド、50〜60種類の品ぞろえ</h3>
+      <p>道産小麦をブレンドした生地を使い、デニッシュ系からハード系まで毎日50〜60種類。季節や気温で製法を変え、同じパンでも夏はサクサク、冬はモチモチに仕上げます。</p>
+    </div>
+    <div class="reason reveal">
+      <img src="chocolat.webp" alt="27層の三角パンオショコラ（イメージ）" loading="lazy">
+      <h3><span class="no">REASON 02</span>三つ折り3回、「27層」の三角パンオショコラ</h3>
+      <p>3種類の小麦を独自にブレンドした生地にバターを練り込み、薄く伸ばして三つ折りにする作業を3回くり返して27層に。一般的な長方形ではなく三角形なのも、この店ならではです。</p>
+    </div>
+    <div class="reason reveal">
+      <h3><span class="no">REASON 03</span>店主が一人で、1日500個</h3>
+      <p>仕込みから焼き上げまで、店主の加須屋篤史さんが一人で担当。1日およそ500個のパンを焼き上げています。パン職人歴17年の手仕事が、毎朝の棚いっぱいのパンになります。</p>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="sec-head reveal"><div class="en">SIGNATURE</div><h2>看板メニュー</h2></div>
+  <div class="menu-grid">
+    <div class="menu-card reveal">
+      <img src="cornet.webp" alt="山鼻コロネ（イメージ）" loading="lazy">
+      <div class="body">
+        <span class="tag">名物</span>
+        <h3>山鼻コロネ（カスタード）</h3>
+        <p>店の名物。サクッと焼いたコロネに、カスタードクリームを詰めました。</p>
+        <p class="price">¥270</p>
+      </div>
+    </div>
+    <div class="menu-card reveal">
+      <img src="danish.webp" alt="デニッシュとクロワッサン（イメージ）" loading="lazy">
+      <div class="body">
+        <span class="tag">人気</span>
+        <h3>珈琲あんバター</h3>
+        <p>ほろ苦いコーヒー風味とあんバターの組み合わせ。デニッシュ系が人気のこの店らしい一品です。</p>
+        <p class="price">¥340</p>
+      </div>
+    </div>
+  </div>
+  <div class="feature reveal" style="margin-top:18px">
+    <img src="chocolat.webp" alt="三角パンオショコラ（イメージ）" loading="lazy">
+    <div class="body">
+      <span class="tag media">テレビで話題</span>
+      <h3>三角パンオショコラ ― 27層のサクサク</h3>
+      <p>HBC「今日ドキッ！」のパン屋めぐり企画（2026年10月放送）で、パンの専門家が「まずここ」とすすめた一品。層の美しさと食感が評判です。価格は店頭でご確認ください。</p>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="sec-head reveal"><div class="en">MENU</div><h2>メニューの一例</h2></div>
+  <table class="menu reveal">
+    <tr><td>山鼻コロネ（カスタード）</td><td class="p">¥270</td></tr>
+    <tr><td>山鼻コロネ（パリチョコ）</td><td class="p">¥280</td></tr>
+    <tr><td>しそ明太</td><td class="p">¥320</td></tr>
+    <tr><td>珈琲あんバター</td><td class="p">¥340</td></tr>
+    <tr><td>トマトとボロネーゼのクロックムッシュ</td><td class="p">¥380</td></tr>
+  </table>
+  <p class="note">※価格は店舗紹介情報に基づく一例です。変更となる場合があります。その日の品ぞろえは店頭・Instagramでご確認ください。</p>
+</section>
+
+<section style="padding-top:0">
+  <div class="sec-head reveal"><div class="en">BAKER</div><h2>店主の紹介</h2></div>
+  <div class="owner reveal">
+    <h3>加須屋 篤史（かすや あつし）</h3>
+    <p>パン職人歴17年。2021年10月に山鼻でLILAC BAKEを開きました。仕込みから焼き上げまで一人で手がけ、季節に合わせて製法を変えるパンづくりを続けています。</p>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="sec-head reveal"><div class="en">NEWS</div><h2>お知らせ</h2></div>
+  <ul class="news reveal">
+    <li><span class="date">2026.10.15</span><br>HBC「今日ドキッ！」のパン屋めぐり企画で、当店と三角パンオショコラが紹介されました。</li>
+    <li>売り切れ次第終了となります。人気のパンは午前中に売り切れることがあります。</li>
+    <li>定休日は火曜・不定休です。臨時休業やその日の品ぞろえはInstagramでお知らせしています。</li>
+  </ul>
+</section>
+
+<section style="padding-top:0">
+  <div class="ig-banner reveal">
+    <h3>最新情報はInstagramで</h3>
+    <p>その日の焼き上がりや限定パン、臨時休業のお知らせは<br>公式Instagram（@lilac__bake）で発信しています。フォロワー9,027人・投稿882件。</p>
+    <a class="btn" href="https://www.instagram.com/lilac__bake/" target="_blank" rel="noopener">Instagramを見る</a>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="sec-head reveal"><div class="en">ACCESS</div><h2>店舗情報</h2></div>
+  <div class="info reveal">
+    <dl>
+      <dt>店名</dt><dd>LILAC BAKE（ライラック ベイク）</dd>
+      <dt>住所</dt><dd>〒064-0922<br>北海道札幌市中央区南22条西9丁目1-31</dd>
+      <dt>アクセス</dt><dd>札幌市電「東屯田通」停留所から約93m（徒歩約2分）／「石山通」停留所からも徒歩圏内</dd>
+      <dt>電話</dt><dd><a href="tel:0112060983">011-206-0983</a></dd>
+      <dt>営業時間</dt><dd>平日 8:00〜18:00／土日祝 9:00〜18:00<br>※売り切れ次第終了</dd>
+      <dt>定休日</dt><dd>火曜日・不定休</dd>
+      <dt>支払い</dt><dd>カード可（VISA・Master・JCB・AMEX・Diners）／QRコード決済可／電子マネー不可</dd>
+      <dt>Instagram</dt><dd><a href="https://www.instagram.com/lilac__bake/" target="_blank" rel="noopener">@lilac__bake</a></dd>
+    </dl>
+    <div class="map">
+      <iframe title="LILAC BAKEの地図" src="https://maps.google.com/maps?q=%E6%9C%AD%E5%B9%8C%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E5%8D%9722%E6%9D%A1%E8%A5%BF9%E4%B8%81%E7%9B%AE1-31&z=16&output=embed" loading="lazy"></iframe>
+    </div>
+    <p class="note">※駐車場の有無は店舗へお問い合わせください。</p>
+  </div>
+</section>
+
+<footer>
+  <div class="fname">LILAC BAKE（ライラック ベイク）</div>
+  <p>〒064-0922 北海道札幌市中央区南22条西9丁目1-31<br>
+  ☎ <a href="tel:0112060983">011-206-0983</a>｜平日 8:00〜18:00／土日祝 9:00〜18:00（売り切れ次第終了）｜定休日：火曜・不定休</p>
+  <p style="margin-top:14px">Instagram：<a href="https://www.instagram.com/lilac__bake/" target="_blank" rel="noopener">@lilac__bake</a></p>
+  <p style="margin-top:18px;font-size:12px;opacity:.85">※掲載写真はすべてイメージです。本番公開時は店舗様ご提供の写真に差し替えます。<br>これはサンプルです。無断使用は禁止しています。</p>
+</footer>
+
+<nav class="action-bar">
+  <a class="tel" href="tel:0112060983">☎ 電話する</a>
+  <a href="https://www.google.com/maps/dir/?api=1&destination=%E6%9C%AD%E5%B9%8C%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E5%8D%9722%E6%9D%A1%E8%A5%BF9%E4%B8%81%E7%9B%AE1-31" target="_blank" rel="noopener">経路案内</a>
+  <a href="https://www.instagram.com/lilac__bake/" target="_blank" rel="noopener">Instagram</a>
+</nav>
+
+<script>
+// ライブ営業ステータス：火曜定休／平日8:00・土日9:00開店〜18:00（売り切れ次第終了）
+(function(){
+  var now = new Date();
+  var day = now.getDay(); // 0=日 1=月 2=火 3=水 4=木 5=金 6=土
+  var t = now.getHours()*60 + now.getMinutes();
+  var dot = document.getElementById('statusDot');
+  var txt = document.getElementById('statusText');
+  function set(on, msg){ if(on){dot.classList.add('open');} txt.innerHTML = msg; }
+  if(day === 2){ set(false, '本日は定休日（火曜）です <small>※不定休あり。最新情報はInstagramでご確認ください</small>'); return; }
+  var open = (day === 0 || day === 6) ? 9*60 : 8*60;
+  var close = 18*60;
+  var openStr = (day === 0 || day === 6) ? '9:00' : '8:00';
+  if(t < open){ set(false, '本日は ' + openStr + ' 開店です <small>売り切れ次第終了となります</small>'); }
+  else if(t < close){ set(true, '営業中です（本日 ' + openStr + '〜18:00） <small>売り切れ次第終了となります</small>'); }
+  else { set(false, '本日の営業は終了しました <small>売り切れ次第終了のため、早めに閉店する場合があります</small>'); }
+})();
+// スクロール連動の出現アニメーション
+(function(){
+  var io = new IntersectionObserver(function(es){
+    es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('on'); io.unobserve(e.target); } });
+  }, {threshold: .12});
+  document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+})();
+</script>
+</body>
+</html>
